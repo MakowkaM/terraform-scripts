@@ -2,7 +2,7 @@ variable "cluster_name" {
   type = string
 }
 
-variable "vpc_id" {
+variable "cluster_version" {
   type = string
 }
 
@@ -26,16 +26,11 @@ variable "public_subnets" {
   type = list(string)
 }
 
-variable "subnet_ids" {
-  type = list(string)
-}
-
-
 variable "ami_type" {
   type = string
 }
 
 variable "instance_types" {
-  type = string
+  type = list(string)
 }
 
